@@ -1,0 +1,31 @@
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+    background: #FFFFFF;
+    font-family: "__interFont_fef634";
+    .button_scroll_top {
+        cursor: pointer;
+        position: absolute;
+        bottom: 50px;
+        right: 5%;
+    }
+    .body {
+        height: calc(100% - 64px);
+        overflow-y: auto;
+        .footer {
+            height: 128px;
+            background: #414141;
+            display: flex;
+            align-items: center;
+            padding-left: 160px;
+            .footer_content {
+                color: #FFFFFF;
+                font-family: "__notoFont_4b531e";
+                font-size: 11px;
+                font-weight: 300;
+                line-height: 16px;
+                margin-right: 45px;
+            }
+        }
+    }
+}

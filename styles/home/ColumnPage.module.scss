@@ -1,0 +1,93 @@
+.wrapper {
+    text-align: center;
+    .recommended_wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 56px 0 52px;
+        .recommended_elm {
+            width: 216px;
+            height: 144px;
+            background: #2E2E2E;
+            margin: 0 16px;
+            .recommended_title {
+                margin-top: 16px;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 27px;
+                text-align: center;
+                color: #FFCC21;
+            }
+            .line {
+                width: 56px;
+                border-bottom: 1px solid #FFFFFF;
+                margin: 12px auto;
+            }
+            .recommended_content {
+                font-family: "__notoFont_4b531e";
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 26px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .information_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1100px;
+        margin: 0 auto;
+        .meal_history {
+            width: 234px;
+            height: 222px;
+            margin: 4px;
+            .meal_image_wrapper {
+                position: relative;
+                .meal_image {
+                    width: 234px;
+                    height: 144px
+                }
+                .meal_time {
+                    position: absolute;
+                    bottom: 0;
+                    width: 144px;
+                    height: 24px;
+                    background: #FFCC21;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    padding-left: 10px;
+                }
+            }
+            .meal_content {
+                font-family: "__notoFont_4b531e";
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 22px;
+                color: #414141;
+            }
+            .meal_title {
+                font-family: "__notoFont_4b531e";
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 22px;
+                color: #FF963C;
+            }
+        }
+    }
+    .button_load_more {
+        margin: 25px 0 60px;
+        width: 296px;
+        height: 56px;
+        background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-family: "__notoFont_4b531e";
+        font-size: 18px;
+        font-weight: 300;
+        color: #FFFFFF;
+    }
+}

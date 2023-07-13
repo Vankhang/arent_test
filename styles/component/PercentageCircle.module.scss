@@ -1,0 +1,29 @@
+.flex_wrapper {
+    .single_chart {
+        width: 181px;
+        .circular_chart {
+            .circle {
+                fill: none;
+                stroke-width: 0.6;
+                stroke-linecap: round;
+                animation: progress 0.5s ease-out forwards;
+                stroke: #eee;
+            }
+            .percentage {
+                font: Inter;
+                fill: white;
+                font-size: 0.36em;
+            }
+            .text {
+                font: Inter;
+                fill: white;
+                font-size: 0.24em;
+            }
+            @keyframes progress {
+                0% {
+                  strokeDasharray: 0 100;
+                }
+            }
+        }
+    }
+}

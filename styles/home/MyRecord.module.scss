@@ -1,0 +1,211 @@
+.wrapper {
+    .row_1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        .col {
+            width: 288px;
+            height: 288px;
+            background: #FFCC21;
+            padding: 24px;
+            margin: 24px;
+            .image {
+                cursor: pointer;
+                width: 240px;
+                height: 240px;
+                background-image: url("/main_photo.png");
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .title {
+                    color: #FFCC21;
+                    font-size: 25px;
+                    font-weight: 400;
+                    margin-bottom: 8px;
+                }
+                .content {
+                    color: #FFFFFF;
+                    background: #FF963C;
+                    width: 160px;
+                    height: 24px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .row_2 {
+        margin-top: 32px;
+        background: #414141;
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        .row_header {
+            display: flex;
+            color: #FFFFFF;  
+            padding: 15px 0 0 32px;              
+            .title {
+                font-size: 15px;
+                font-weight: 400;
+                text-align: left;
+                width: 100px;
+                line-height: 18px;
+            }
+            .time {
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 40px;
+            }
+        }
+        .chart_filter {
+            display: flex;
+            padding: 15px 0 20px 32px;              
+            .filter_option {
+                cursor: pointer;
+                width: 56px;
+                height: 24px;
+                border-radius: 12px;
+                background: #FFFFFF;
+                color: #FFCC21;
+                text-align: center;
+                font-family: "__notoFont_4b531e";
+                font-size: 15px;
+                font-weight: 300;
+                margin-right: 16px;
+                &.selected {
+                    background: #FFCC21;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .row_3 {
+        margin-top: 56px;
+        background: #414141;
+        width: 960px;
+        height: 264px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 20px;
+        .row_header {
+            display: flex;
+            color: #FFFFFF;  
+            padding: 15px 0 0 32px;              
+            .title {
+                font-size: 15px;
+                font-weight: 400;
+                text-align: left;
+                width: 90px;
+                line-height: 18px;
+                margin-right: 10px;
+            }
+            .time {
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 40px;
+            }
+        }
+        .exercise_list {
+            display: flex;
+            flex-wrap: wrap;
+            height: 192px;
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #FFCC21;
+                border-radius: 20px;
+            }
+            &::-webkit-scrollbar-track {
+                background: #777777;
+            }
+            .exercise_elm {
+                display: flex;
+                border-bottom: 1px solid #777777;
+                width: 416px;
+                margin: 4px 24px;
+                .dot {
+                    min-height: 4px;
+                    min-width: 4px;
+                    height: 4px;
+                    width: 4px;
+                    border-radius: 50%;
+                    background: #FFFFFF;
+                    margin: 10px 10px 0 0;
+                }
+                .exercise_content {
+                    margin-right: auto;
+                    .exercise_content_text {
+                        color: #FFFFFF;
+                    }
+                    .exercise_content_kcal {
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #FFCC21;
+                    }
+                }
+                .exercise_time {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #FFCC21;
+                }
+            }
+        }
+    }
+    .row_4 {
+        margin-top: 56px;
+        width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        .diary_title {
+            margin-left: 5px;
+            font-size: 22px;
+            font-weight: 400;
+            color: #414141;
+            text-align: left;
+        }
+        .diary_list {
+            display: flex;
+            flex-wrap: wrap;
+            .diary_elm {
+                width: 232px;
+                height: 232px;
+                border: 2px solid #707070;
+                margin: 5px;
+                color: #414141;
+                padding: 16px;
+                .diary_time {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    width: 100px;
+                    text-align: left;
+                }
+                .diary_content {
+                    font-family: "__notoFont_4b531e";
+                    font-size: 12px;
+                    font-weight: 300;
+                    line-height: 17px;
+                    margin-top: 7px;
+                    text-align: left;
+                }
+            }
+        }
+        
+        .button_load_more {
+            margin: 25px 0 60px;
+            width: 296px;
+            height: 56px;
+            background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            font-family: "__notoFont_4b531e";
+            font-size: 18px;
+            font-weight: 300;
+            color: #FFFFFF;
+        }
+    }
+}

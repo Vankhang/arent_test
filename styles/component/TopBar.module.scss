@@ -1,0 +1,86 @@
+.wrapper {
+    font-family: "__notoFont_4b531e";
+    display: flex;
+    justify-content: space-between;
+    background: #414141;
+    height: 64px;
+    overflow: hidden;
+    .col_logo {
+        .logo_icon {
+            margin-left: 160px;
+            cursor: pointer;
+        }
+    }
+    .col_menu {
+        display: flex;
+        .menu_item {
+            display: flex;
+            cursor: pointer;
+            width: 160px;
+            align-items: center;
+            .menu_icon {
+                position: relative;
+                .noti_number {
+                    position: absolute;
+                    top: -1px;
+                    right: -7px;
+                    height: 16px;
+                    width: 16px;
+                    background: #EA6C00;
+                    border-radius: 50%;
+                    color: #FFFFFF;
+                    line-height: 16px;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+            .menu_title {
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: 300;
+                text-align: left;
+                margin-left: 8px;
+            }
+            &::after {
+                display: none !important;
+            }
+            &.menu_item_option {
+                background: #414141;
+                outline: none;
+                border: none;
+                width: 50px;
+            }
+            &.selected {
+                .menu_title {
+                    color: #FF963C;
+                }
+            }
+        }
+        .option_input_menu {
+            border-radius: 0;
+            right: 3px !important;
+            background: #777777;
+            width: 200px;
+            padding: 0;
+            border: none;
+            .option_input_item {
+                color: #FFFFFF;
+                cursor: pointer;
+                height: 48px;
+                line-height: 40px;
+                border-top: 1px solid #959595;
+                border-bottom: 1px solid #5e5e5e;
+                &:hover {
+                    background: #959595;
+                    border-bottom: none;
+                }
+                &:last-child {
+                    border-bottom: none;
+                }
+                &:first-child {
+                    border-top: none;
+                }
+            }
+        }
+    }
+}
